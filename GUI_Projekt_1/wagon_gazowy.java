@@ -1,0 +1,15 @@
+package GUI_Projekt_1;
+
+public class wagon_gazowy extends wagon_towarowy_podstawowy{
+
+    private final int maxLitrow;
+
+    public wagon_gazowy(boolean wymagaPodloczeniaDoEle, int ID_Wagonu, int wagaNetto, int wagaBrutto, String nadawca, int maxLitrow) {
+        super(wymagaPodloczeniaDoEle = false, ID_Wagonu, wagaNetto, wagaBrutto, nadawca);
+        this.maxLitrow = maxLitrow;
+    }
+
+    public int getMaxLitrow() {
+        return maxLitrow;
+    }
+}
